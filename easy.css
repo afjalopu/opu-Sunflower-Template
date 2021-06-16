@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Satisfy', cursive;
+}
+.header 
+{
+   background-image: url(eric-tompkins-Ph8m2QHF_w8-unsplash.jpg);
+   height: 100vh;
+   width: auto;
+   background-position: center;
+   background-size: cover;
+   backface-visibility: hidden;
+   background-attachment: fixed;
+}
+.navbar
+{
+   display: flex;
+   width: 80%;
+   padding: 10px ;
+   align-items: center;
+   justify-content: space-between;
+   margin: auto;
+}
+
+.nav a
+{
+    font-size: 1.5rem;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(70, 250, 211);
+    position: relative;
+}
+.navbar a::after
+{
+     content: '';
+     height: 3px;
+     width: 0%;
+     left: 0px;
+     bottom: 0px;
+     position: absolute;
+     background-color: rgb(45, 230, 255);
+     transition: .9s;
+}
+.navbar a:hover::after
+{
+    
+     width: 100%;
+}
+.nav a:hover
+{
+   color: rgb(255, 255, 255);
+ }
+
+.navbar i
+{
+    color: rgb(255, 158, 13);
+    transition: 1.2s;
+    padding: 20px;
+}
+.navbar i:hover
+{
+    transform: rotate(360deg);
+    color: rgb(26, 122, 2);
+}
+.content 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   text-align: center;
+}
+.content p
+{
+    font-size: 1.8rem;
+    color: rgb(207, 230, 250);
+    padding: 20px 10px;
+}
+
+.content button
+{
+    font-size: 1rem;
+    padding: 12px 6px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+ }
+ span
+ {
+     background-color: rgb(0, 0, 0);
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 100%;
+     width: 0;
+     z-index: -1;
+     transition: 1s;
+ }
+button:hover span
+{
+    width: 100%;
+}
+button:hover
+{
+    border: none;
+  }
